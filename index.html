@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/main.css" />
+  </head>
+
+  <body>
+    <h1>My Sandbox</h1>
+    <div>
+      <h2>Dice Roller</h2>
+      <form name="formA">
+        <label>Number of Dice: </label>
+        <select name="numDice">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option> </select
+        ><br /><br />
+        <label>Dice Type: </label>
+        <select name="diceType">
+          <option>4</option>
+          <option>6</option>
+          <option>8</option>
+          <option>10</option>
+          <option>12</option>
+          <option>20</option>
+          <option>100</option> </select
+        ><br /><br />
+        <button onclick="diceRoller(); return false;">Roll Now!</button>
+      </form>
+      <form name="formB">
+        <label>Individual Results: </label><br />
+        <textarea name="indResult"></textarea><br /><br />
+        <label>Total Result: </label><br />
+        <textarea name="totResult"></textarea><br /><br />
+      </form>
+    </div>
+
+    <div>
+      <h2>Character Creator</h2>
+      <h3>Part 1</h3>
+      <form name="formC">
+        <label>Select Character Race: </label>
+        <select name="charRace">
+          <option>Human</option>
+          <option>Elf</option>
+          <option>Dwarf</option> </select
+        ><br /><br />
+        <label>Select Character Class: </label>
+        <select name="charClass">
+          <option>Fighter</option>
+          <option>Mage</option>
+          <option>Cleric</option> </select
+        ><br /><br />
+        <button onclick="partOne(); return false;">Roll Stats</button>
+      </form>
+      <form name="formD">
+        <label>Strength: </label> <label name="str"></label>
+        <label>Dexterity: </label> <label name="dex"></label>
+        <label>Constitution: </label> <label name="con"></label>
+        <label>Wisdom: </label> <label name="wis"></label>
+        <label>Inteligence: </label> <label name="iq"></label>
+        <label>Charisma: </label> <label name="cha"></label>
+      </form>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

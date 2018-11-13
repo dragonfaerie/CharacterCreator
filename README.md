@@ -1,2 +1,0 @@
-# CharacterCreator
-Created with CodeSandbox
